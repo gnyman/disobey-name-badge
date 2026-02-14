@@ -85,6 +85,34 @@ If you encounter issues, see [TROUBLESHOOTING.md](TROUBLESHOOTING.md) for soluti
 - **Normal**: Contains the full game functionality
 - **Minimal**: Contains badge test screen and OTA update capability for initial badge testing. This is only used to test badges until normal firmware has been developed enough
 
+## Name Badge App (`hello3`)
+
+This firmware includes a single name badge game module, **Name Badge 3**, for live badge display customization.
+
+### What it does
+
+- Lets you edit a custom text string (up to 12 chars) and persist it to JSON config.
+- Renders the text in large pixel glyphs optimized for the 320x170 display.
+- Supports display effects: `ZOOM`, `SINE`, `SCROLL`, `PLASMA`.
+- Supports themes: `MATRIX`, `CYBER`, `FIRE`, `VAPOR`, `RETRO`.
+- Drives the badge LEDs with color presets and a rotating trail animation.
+
+### Controls
+
+- **DISPLAY mode**
+  - `LEFT/RIGHT`: cycle effect
+  - `UP/DOWN`: cycle theme
+  - `A` (Yellow): cycle LED color
+  - `SELECT` (Blue): switch to edit mode
+  - hold `B` (Red): exit back to menu
+- **EDIT mode**
+  - `UP/DOWN`: change current character
+  - `A` (Yellow): append character
+  - `B` (Red): delete character
+  - `START` (Green): clear text
+  - `SELECT` (Blue): return to display mode
+  - hold `B` (Red): exit back to menu
+
 ## Documentation
 
 - **[HARDWARE.md](HARDWARE.md)** - Hardware specifications, schematics, and 3D models
